@@ -83,7 +83,11 @@ benign file: ../icse/benign_test/fea19a076f65458f2aefdae2498bd9b8
 52101 103416 0.5038001856579253
 ```
 
-
 By following these instructions, you will be able to generate the model files and perform detection using the provided datasets effectively.
+
+
+## Disclaimer
+This project is the code implementation of the “Distilling Benign Knowledge with Fine-Grained AST Fragments for Precise Real-World Web Shell Detection” paper. If you use this project, please cite our paper.
+
 
 

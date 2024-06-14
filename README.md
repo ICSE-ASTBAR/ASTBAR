@@ -10,7 +10,7 @@ We meticulously curated a large-scale dataset comprising well-annotated samples 
 
 
 
-## Code
+## Usage
 
 1. Generating the Model File with an Existing Dataset
 Please use the existing dataset to generate the model file for benign knowledge first. Configure the dataset directory and the name of the generated model accordingly.

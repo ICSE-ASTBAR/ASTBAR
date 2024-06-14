@@ -15,8 +15,20 @@ We meticulously curated a large-scale dataset comprising well-annotated samples 
 
 ## Usage
 
+0. Install dependencies
+   
+Ensure you are using Python 3.8 or later, and install the required dependencies:
+
+
+```
+pip install tqdm redis
+```
+
+
+
+
 1. Generating the Model File with an Existing Dataset
-Please use the existing dataset to generate the model file for benign knowledge first. Configure the dataset directory and the name of the generated model accordingly.
+First, configure the dataset directory and specify the name for the generated model:
 
 
 ```
@@ -24,7 +36,8 @@ src_path = '../dataset/benign'
 model_name = 'model/sys2_1.pkl'
 ```
 
-Then run the gen_ast.py
+Then, generate the model by running:
+
 
 ```
 python3 gen_ast.py
@@ -32,20 +45,24 @@ python3 gen_ast.py
 
 2. Directory Configuration for Detection
 
-Next, configure the model path and directory that needs to be scanned for detection. Then, execute the predict_base.py file.
+Next, configure the model path and the directory that needs to be scanned for detection:
+
 
 ```
 target_path = '../dataset/malware'
 file_name = 'model/sys2_1.pkl'
 ```
 
-Then run the predict_base.py
+Then, execute the detection script:
+
 
 ```
 python3 predict_base.py
 ```
 
 3. Checking Output Information
+
+After running the detection script, review the output to see the MD5 hashes of the detected benign files:
 
 
 ```
@@ -65,3 +82,8 @@ benign file: ../icse/benign_test/b9e77b06f611192b1f944d173e0cf59b
 benign file: ../icse/benign_test/fea19a076f65458f2aefdae2498bd9b8
 52101 103416 0.5038001856579253
 ```
+
+
+By following these instructions, you will be able to generate the model files and perform detection using the provided datasets effectively.
+
+

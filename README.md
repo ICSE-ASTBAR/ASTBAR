@@ -4,6 +4,11 @@ ASTBAR - Utilized for benign software detection in webshell detection tasks, eff
 
 ## Dataset
 
+We meticulously curated a large-scale dataset comprising well-annotated samples of malicious and benign software. The benign software primarily originated from popular Content Management Systems (CMS), such as WordPress, ThinkPHP, and Symfony, which were scraped from GitHub. After a rigorous deduplication process, a total of 132,333 benign samples were obtained. On the other hand, the malicious samples were predominantly sourced from a cloud computing company, representing real-world industrial samples. This malicious subset encompassed various categories, including highly adversarial samples, surgical malware specimens, and different malware families. After the removal of duplicates, a total of 50,063 malicious samples were included in the dataset. 
+
+
+
+
 
 ## Code
 
